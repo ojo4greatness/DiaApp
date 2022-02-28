@@ -8,8 +8,8 @@ from PIL import Image
 
 st.write(""" Diabetes Status Prediction App""")
 
-image = Image.open('flower.jpg')
-st.image(image, caption='Look and go down to input your values')
+image = Image.open('flower.webp')
+st.sidebar.image(image)
 
 model=pickle.load(open('diabetes_model.pkl', 'rb'))
 scaler = pickle.load(open('scaler2.pkl', 'rb'))
